@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box;
+    border: 1px solid red; */
+}
+
+/* 
+TIPOGRAFIAS
+font-family: 'Inter', sans-serif;
+*/
+
+/* html{
+    background-color: black;
+} */
+.bodyHome{
+    background-color: black;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    background-color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+}
+
+.linkButtonHeaderBack{
+    background-color: #99000085;
+    border-style: solid;
+    border-color: black;
+    border-width: .0625rem;
+    border-radius: 3.125rem;
+    width: 18.75rem;
+    height: 4.6875rem;
+    /* padding: 13px 2px 13px 2px; */
+    /* margin: auto; */
+    /* text-align: center; */
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -150%);
+}
+.backgroundHeaderTitle{
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.navBar{
+    background-color: #990000;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navBarHome{
+    background-color: #99000090;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* header nav{
+    background-color: #990000;
+} */
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+nav li a{
+    text-decoration: none;
+    color: #F6F6F6;
+}
+.logo{
+    height: 3.125rem;
+    margin: .3125rem;
+}
+.headerHome{
+    background-image: url("../assets/img/guitar-man-background.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 45rem;
+    /* width: 100%; */
+}
+.mainHome{
+    background-color: black;
+    margin: 1.25rem;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    grid-template-areas: 
+    "men women"
+    "denim denim"    ;
+    gap: 1.25rem;
+}
+.men{
+    grid-area: men;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.men img{
+    width: 100%;
+}
+.women{
+    grid-area: women;
+    width: 100%;
+    position: relative;
+}
+.women img{
+    width: 100%;
+    height: 100%;
+}
+.denim{
+    grid-area: denim;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.denim img{
+    width: 100%;
+}
+.mainText{
+    color: white;
+    position: absolute;
+    font-size: 4rem;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: .625rem;
+}
+.textImg{
+    color: white;
+    background-color: #990000;
+}
+footer{
+    background-color: #F6F6F6;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    grid-template-areas: 
+    "column1 column2 column3"
+    ". redesIconos ." ;
+    /* text-decoration: none; */
+    align-items: center;
+    justify-items: center;
+    padding: .625rm;    
+}
+footer div p{
+    font-weight: bold;
+}
+.column1{
+    grid-area: column1;
+    /* text-align: center; */
+    color: #6F0707;
+}
+.column1 ul{
+    list-style: none;
+
+}
+.column1 a{
+    text-decoration: none;
+    color: #6F0707;
+}
+.column2{
+    grid-area: column2;
+    /* text-align: center; */
+    color: #6F0707;
+}
+.column2 ul{
+    list-style: none;
+}
+.column2 a{
+    text-decoration: none;
+    color: #6F0707;
+}
+.column3{
+    grid-area: column3;
+    /* text-align: center; */
+    color: #6F0707;
+}
+.column3 ul{
+    list-style: none;
+}
+.column3 a{
+    text-decoration: none;
+    color: #6F0707;
+}
+.redesIconos{
+    grid-area: redesIconos;
+    justify-self: center;
+    margin: 1.25rem;
+}
+.bannerSale img{
+    /* background-image: url("../assets/img/bannerSale.png");
+    background-size: cover;
+    background-position: center center; */
+    /* height: 32rem; */
+    width: 100%;
+}
+
+.botonEnviarForm{
+    font-size: 1.3rem;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    background-color: #6F0707;
+    border-color: #6F0707;
+    /* height: 2rem;
+        
+    border-radius: 3.125rem;
+    border-style: none; */   
+}
+.contactoH1{
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+}
+.botonIniciarSesion{
+    font-size: 1.3rem;
+    color: white;
+    background-color: #6F0707;
+    height: 2rem;
+    width: 10rem;
+    border-radius: 3.125rem;
+    border-style: none;
+    
+}
+.linkTextStyle{
+    text-decoration: none;
+    color: black;
+}
+
+/*COLECCION*/
+.mainColeccion{
+    width: 100%;
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+    grid-template-areas: 
+    "prenda1 prenda2 prenda3 prenda4"
+    "prenda5 prenda6 prenda7 prenda8"
+    "prenda9 prenda10 prenda11 prenda12"
+    "prenda13 prenda14 prenda15 prenda16";
+    gap: 1.25rem;
+    /* margin: 1.25rem 1.875rem; */
+    padding: 1.25rem 2.5rem;
+}
+.prenda1{
+    grid-area: prenda1;
+    width: 100%;
+    height: 100%;
+}
+.prenda2{
+    grid-area: prenda2;
+    width: 100%;
+    height: 100%;
+}
+.prenda3{
+    grid-area: prenda3;
+    width: 100%;
+    height: 100%;
+}
+.prenda4{
+    grid-area: prenda4;
+    width: 100%;
+    height: 100%;
+}
+.prenda5{
+    grid-area: prenda5;
+    width: 100%;
+    height: 100%;
+}
+.prenda6{
+    grid-area: prenda6;
+    width: 100%;
+    height: 100%;
+}
+.prenda7{
+    grid-area: prenda7;
+    width: 100%;
+    height: 100%;
+}
+.prenda8{
+    grid-area: prenda8;
+    width: 100%;
+    height: 100%;
+}
+.prenda9{
+    grid-area: prenda9;
+    width: 100%;
+    height: 100%;
+}
+.prenda10{
+    grid-area: prenda10;
+    width: 100%;
+    height: 100%;
+}
+.prenda11{
+    grid-area: prenda11;
+    width: 100%;
+    height: 100%;
+}
+.prenda12{
+    grid-area: prenda12;
+    width: 100%;
+    height: 100%;
+}
+.prenda13{
+    grid-area: prenda13;
+    width: 100%;
+    height: 100%;
+}
+.prenda14{
+    grid-area: prenda14;
+    width: 100%;
+    height: 100%;
+}
+.prenda15{
+    grid-area: prenda15;
+    width: 100%;
+    height: 100%;
+}
+.prenda16{
+    grid-area: prenda16;
+    width: 100%;
+    height: 100%;
+}
+
+.cardPrendas{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.cardPrendas img{
+    margin-bottom: .3125rem;
+}
+
+/*SALE*/
+.mainSale{
+    margin: 1.25rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .625rem;
+}
+.mainSale div{
+    position: relative;
+}
+.mainSale img{
+    width: 100%;
+}
+.bannerSaleTypo{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.85);
+    text-align: center;
+    /* padding: 0.5rem;
+    width: 6rem;
+    height: 2rem; */
+    padding: .3125rem;
+    width: auto;
+    position: absolute;
+    font-size: 3rem;
+    top: 50%;
+    left: 5%;
+    /* transform: translate(-50%, -50%); */
+    /* padding: .625rem; */
+}
