@@ -122,12 +122,17 @@ footer {
   grid-template-areas: "prenda1 prenda2 prenda3 prenda4" "prenda5 prenda6 prenda7 prenda8" "prenda9 prenda10 prenda11 prenda12" "prenda13 prenda14 prenda15 prenda16";
   justify-content: none;
   align-content: none;
-  gap: 1rem;
+  column-gap: .125rem;
+  row-gap: .9375rem;
   /* margin: 1.25rem 1.875rem; */
   padding: 1.25rem; }
 
 .prenda1, .prenda2, .prenda3, .prenda4, .prenda5, .prenda6, .prenda7, .prenda8, .prenda9, .prenda10, .prenda11, .prenda12, .prenda13, .prenda14, .prenda15, .prenda16 {
-  grid-area: prenda1; }
+  grid-area: prenda1;
+  color: black;
+  text-decoration: none; }
+  .prenda1 img, .prenda2 img, .prenda3 img, .prenda4 img, .prenda5 img, .prenda6 img, .prenda7 img, .prenda8 img, .prenda9 img, .prenda10 img, .prenda11 img, .prenda12 img, .prenda13 img, .prenda14 img, .prenda15 img, .prenda16 img {
+    width: 100%; }
 
 .prenda2 {
   grid-area: prenda2; }
@@ -173,9 +178,6 @@ footer {
 
 .prenda16 {
   grid-area: prenda16; }
-
-.cardPrendas img {
-  width: 100%; }
 
 .bannerSale img {
   /* background-image: url("../assets/img/bannerSale.png");
