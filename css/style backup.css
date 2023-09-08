@@ -335,8 +335,8 @@ footer div p{
     margin-bottom: .3125rem;
 } */
 
-/*SALE*/
-.mainSale{
+/*SALE*/                                /*LISTO*/
+/* .mainSale{
     margin: 1.25rem 2.5rem;
     display: flex;
     flex-direction: column;
@@ -354,13 +354,13 @@ footer div p{
     text-align: center;
     /* padding: 0.5rem;
     width: 6rem;
-    height: 2rem; */
+    height: 2rem; 
     padding: .3125rem;
     width: auto;
     position: absolute;
     font-size: 3rem;
     top: 50%;
     left: 5%;
-    /* transform: translate(-50%, -50%); */
-    /* padding: .625rem; */
-}
+    /* transform: translate(-50%, -50%); 
+    /* padding: .625rem; 
+} */

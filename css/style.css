@@ -176,3 +176,41 @@ footer {
 
 .cardPrendas img {
   width: 100%; }
+
+.bannerSale img {
+  /* background-image: url("../assets/img/bannerSale.png");
+    background-size: cover;
+    background-position: center center; */
+  /* height: 32rem; */
+  width: 100%; }
+
+.mainSale {
+  margin: 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: .625rem; }
+  .mainSale div {
+    position: relative; }
+    .mainSale div img {
+      width: 100%; }
+
+.bannerSaleTypo {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.85);
+  text-align: center;
+  /* padding: 0.5rem;
+    width: 6rem;
+    height: 2rem; */
+  padding: .3125rem;
+  width: auto;
+  position: absolute;
+  font-size: 3.5vw;
+  top: 50%;
+  left: 5%;
+  /* transform: translate(-50%, -50%); */
+  /* padding: .625rem; */
+  text-decoration: none; }
+
+.bannerSaleJeans {
+  left: auto;
+  right: 5%; }
