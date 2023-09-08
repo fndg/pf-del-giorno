@@ -1,0 +1,105 @@
+.mainColeccion{
+    width: 100%;
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+    grid-template-areas: 
+    "prenda1 prenda2 prenda3 prenda4"
+    "prenda5 prenda6 prenda7 prenda8"
+    "prenda9 prenda10 prenda11 prenda12"
+    "prenda13 prenda14 prenda15 prenda16";
+    gap: 1.25rem;
+    /* margin: 1.25rem 1.875rem; */
+    padding: 1.25rem 2.5rem;
+}
+.prenda1{
+    grid-area: prenda1;
+    width: 100%;
+    height: 100%;
+}
+.prenda2{
+    grid-area: prenda2;
+    width: 100%;
+    height: 100%;
+}
+.prenda3{
+    grid-area: prenda3;
+    width: 100%;
+    height: 100%;
+}
+.prenda4{
+    grid-area: prenda4;
+    width: 100%;
+    height: 100%;
+}
+.prenda5{
+    grid-area: prenda5;
+    width: 100%;
+    height: 100%;
+}
+.prenda6{
+    grid-area: prenda6;
+    width: 100%;
+    height: 100%;
+}
+.prenda7{
+    grid-area: prenda7;
+    width: 100%;
+    height: 100%;
+}
+.prenda8{
+    grid-area: prenda8;
+    width: 100%;
+    height: 100%;
+}
+.prenda9{
+    grid-area: prenda9;
+    width: 100%;
+    height: 100%;
+}
+.prenda10{
+    grid-area: prenda10;
+    width: 100%;
+    height: 100%;
+}
+.prenda11{
+    grid-area: prenda11;
+    width: 100%;
+    height: 100%;
+}
+.prenda12{
+    grid-area: prenda12;
+    width: 100%;
+    height: 100%;
+}
+.prenda13{
+    grid-area: prenda13;
+    width: 100%;
+    height: 100%;
+}
+.prenda14{
+    grid-area: prenda14;
+    width: 100%;
+    height: 100%;
+}
+.prenda15{
+    grid-area: prenda15;
+    width: 100%;
+    height: 100%;
+}
+.prenda16{
+    grid-area: prenda16;
+    width: 100%;
+    height: 100%;
+}
+
+.cardPrendas{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.cardPrendas img{
+    margin-bottom: .3125rem;
+}

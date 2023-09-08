@@ -1,0 +1,38 @@
+footer{
+    background-color: $color-footer;
+    @include grid (1fr 1fr 1fr, 1fr 1fr, "column1 column2 column3"". redesIconos .", center, center );
+    justify-items: center;
+    padding: .625rem;
+    div{
+        p{
+            font-weight: bold;
+        }
+    }
+    .column1{
+        grid-area: column1;
+        color: $color-font-footer;
+        ul{
+            list-style: none;
+            li{
+                a{
+                    text-decoration: none;
+                    color: $color-font-footer;
+                }
+            }
+        }
+    }
+    .column2{
+        @extend .column1;
+        grid-area: column2;
+    }
+    .column3{
+        @extend .column1;
+        grid-area: column3;
+    }
+    .redesIconos{
+        grid-area: redesIconos;
+        justify-self: center;
+        margin: 1.25rem;
+    }
+}
+

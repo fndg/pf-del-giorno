@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;700&display=swap');
-*{
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;700&display=swap'); */
+/* *{                                  LISTO
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box;
-    border: 1px solid red; */
-}
+    box-sizing: border-box;
+    border: 1px solid red; 
+}*/
 
 /* 
 TIPOGRAFIAS
@@ -14,16 +14,16 @@ font-family: 'Inter', sans-serif;
 /* html{
     background-color: black;
 } */
-.bodyHome{
+/* .bodyHome{                           LISTO
     background-color: black;
     font-family: 'Inter', sans-serif;
-}
-body{
+} */
+/* body{                                LISTO
     background-color: #FFFFFF;
     font-family: 'Inter', sans-serif;
-}
+} */
 
-.linkButtonHeaderBack{
+/* .linkButtonHeaderBack{               LISTO
     background-color: #99000085;
     border-style: solid;
     border-color: black;
@@ -31,9 +31,6 @@ body{
     border-radius: 3.125rem;
     width: 18.75rem;
     height: 4.6875rem;
-    /* padding: 13px 2px 13px 2px; */
-    /* margin: auto; */
-    /* text-align: center; */
     position: relative;
     top: 50%;
     left: 50%;
@@ -48,25 +45,25 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-.navBar{
+} */
+/* .navBar{
     background-color: #990000;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.navBarHome{
+} */
+/* .navBarHome{
     background-color: #99000090;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+} */
 /* header nav{
     background-color: #990000;
 } */
-nav ul{
+/* nav ul{
     list-style: none;
     display: flex;
     gap: 1rem;
@@ -78,19 +75,18 @@ nav ul{
 nav li a{
     text-decoration: none;
     color: #F6F6F6;
-}
-.logo{
+} */
+/* .logo{                               LISTO          
     height: 3.125rem;
     margin: .3125rem;
-}
-.headerHome{
+} */
+/* .headerHome{                         LISTO
     background-image: url("../assets/img/guitar-man-background.jpg");
     background-size: cover;
     background-position: center center;
     height: 45rem;
-    /* width: 100%; */
-}
-.mainHome{
+} */
+/* .mainHome{
     background-color: black;
     margin: 1.25rem;
     display: grid;
@@ -137,29 +133,27 @@ nav li a{
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.8);
     padding: .625rem;
-}
+} */
 .textImg{
     color: white;
     background-color: #990000;
 }
-footer{
+/* footer{                                  LISTO
     background-color: #F6F6F6;
     display: grid;
     grid-template: 1fr 1fr / 1fr 1fr 1fr;
     grid-template-areas: 
     "column1 column2 column3"
     ". redesIconos ." ;
-    /* text-decoration: none; */
     align-items: center;
     justify-items: center;
-    padding: .625rm;    
+    padding: .625rem;    
 }
 footer div p{
     font-weight: bold;
 }
 .column1{
     grid-area: column1;
-    /* text-align: center; */
     color: #6F0707;
 }
 .column1 ul{
@@ -172,7 +166,6 @@ footer div p{
 }
 .column2{
     grid-area: column2;
-    /* text-align: center; */
     color: #6F0707;
 }
 .column2 ul{
@@ -184,7 +177,6 @@ footer div p{
 }
 .column3{
     grid-area: column3;
-    /* text-align: center; */
     color: #6F0707;
 }
 .column3 ul{
@@ -198,7 +190,7 @@ footer div p{
     grid-area: redesIconos;
     justify-self: center;
     margin: 1.25rem;
-}
+} */
 .bannerSale img{
     /* background-image: url("../assets/img/bannerSale.png");
     background-size: cover;
