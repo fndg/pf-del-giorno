@@ -48,7 +48,8 @@ footer {
   justify-content: center;
   align-content: center;
   justify-items: center;
-  padding: .625rem; }
+  padding: .625rem;
+  width: 100%; }
   footer div p {
     font-weight: bold; }
   footer .column1, footer .column2, footer .column3 {
@@ -65,7 +66,8 @@ footer {
     grid-area: column3; }
   footer .redesIconos {
     grid-area: redesIconos;
-    justify-self: center;
+    display: flex;
+    gap: 5vw;
     margin: 1.25rem; }
 
 .bodyHome {
@@ -240,3 +242,15 @@ footer {
     font-weight: bold;
     margin: 0;
     font-size: 1rem; }
+
+@media (max-width: 768px) {
+  .mainColeccion {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas: "prenda1 prenda2" "prenda3 prenda4" "prenda5 prenda6" "prenda7 prenda8" "prenda9 prenda10" "prenda11 prenda12" "prenda13 prenda14" "prenda15 prenda16"; } }
+
+@media (max-width: 500px) {
+  .mainColeccion {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas: "prenda1"  "prenda2" "prenda3"  "prenda4" "prenda5"  "prenda6" "prenda7"  "prenda8" "prenda9"  "prenda10" "prenda11"  "prenda12" "prenda13"  "prenda14" "prenda15"  "prenda16"; } }

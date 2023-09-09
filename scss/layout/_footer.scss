@@ -3,6 +3,7 @@ footer{
     @include grid (1fr 1fr 1fr, 1fr 1fr, "column1 column2 column3"". redesIconos .", center, center );
     justify-items: center;
     padding: .625rem;
+    width: 100%;
     div{
         p{
             font-weight: bold;
@@ -31,7 +32,9 @@ footer{
     }
     .redesIconos{
         grid-area: redesIconos;
-        justify-self: center;
+        display: flex;
+        gap: 5vw;
+        // justify-self: center;
         margin: 1.25rem;
     }
 }
