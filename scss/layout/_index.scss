@@ -7,7 +7,6 @@
     background-image: url("../assets/img/guitar-man-background.jpg");
     background-size: cover;
     background-position: center center;
-    // height: 45rem;
     height: 100vh;
     width: 100%;
 }
@@ -38,14 +37,11 @@
 }
 
 .mainHome{
-    // background-color: black;
     margin: 1.25rem;
     @include grid (1fr 1fr, 1fr 1fr,"men women""denim denim", none, none);
     gap: 1.25rem;
     .men{
         grid-area: men;
-        // width: 100%;
-        // height: 100%;
         position: relative;
         img{
             width: 100%;

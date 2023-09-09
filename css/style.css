@@ -5,11 +5,7 @@
   color: white;
   background-color: #990000;
   border: none;
-  width: auto;
-  /* height: 2rem;
-        
-    border-radius: 3.125rem;
-    border-style: none; */ }
+  width: auto; }
   .buttonSubmitForm:hover {
     background-color: #860000;
     color: white; }
@@ -22,6 +18,11 @@
 body {
   font-family: "Inter", sans-serif;
   background-color: #f4f3f1; }
+
+h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  color: #212529; }
 
 .logo {
   height: 3.125rem; }
@@ -63,6 +64,11 @@ footer {
     grid-area: redesIconos;
     justify-self: center;
     margin: 1.25rem; }
+
+.footerCorrection {
+  position: absolute;
+  width: 100%;
+  bottom: 0; }
 
 .bodyHome {
   background-color: black;
@@ -139,7 +145,6 @@ footer {
   align-content: none;
   column-gap: .125rem;
   row-gap: .9375rem;
-  /* margin: 1.25rem 1.875rem; */
   padding: 1.25rem; }
 
 .prenda1, .prenda2, .prenda3, .prenda4, .prenda5, .prenda6, .prenda7, .prenda8, .prenda9, .prenda10, .prenda11, .prenda12, .prenda13, .prenda14, .prenda15, .prenda16 {
@@ -195,10 +200,6 @@ footer {
   grid-area: prenda16; }
 
 .bannerSale img {
-  /* background-image: url("../assets/img/bannerSale.png");
-    background-size: cover;
-    background-position: center center; */
-  /* height: 32rem; */
   width: 100%; }
 
 .mainSale {
@@ -215,19 +216,20 @@ footer {
   color: white;
   background-color: rgba(0, 0, 0, 0.85);
   text-align: center;
-  /* padding: 0.5rem;
-    width: 6rem;
-    height: 2rem; */
   padding: .3125rem;
   width: auto;
   position: absolute;
   font-size: 3.5vw;
   top: 50%;
   left: 5%;
-  /* transform: translate(-50%, -50%); */
-  /* padding: .625rem; */
   text-decoration: none; }
 
 .bannerSaleJeans {
   left: auto;
   right: 5%; }
+
+.linkTextStyle {
+  text-decoration: none;
+  color: black; }
+  .linkTextStyle:hover {
+    text-decoration: underline; }

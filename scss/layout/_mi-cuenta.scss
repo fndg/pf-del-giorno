@@ -1,0 +1,9 @@
+.linkTextStyle{
+    text-decoration: none;
+    color: black;
+    &:hover{
+        text-decoration: underline;
+
+    }
+}
+
