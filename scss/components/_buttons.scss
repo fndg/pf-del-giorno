@@ -1,0 +1,24 @@
+.buttonSubmitForm{
+    font-size: 1.3rem;
+    font-family: $font-1;
+    color: $color-font-nav;
+    background-color: $color-navbar;
+    border: none;
+    width: auto;
+    &:hover{
+        background-color: #860000;
+        color: $color-font-nav;
+        // border: 2px solid black
+    }
+    // height: auto;
+    // border-color: #6F0707;
+    /* height: 2rem;
+        
+    border-radius: 3.125rem;
+    border-style: none; */
+}
+
+// .buttonSubmitForm:hover{
+//     background-color: blue
+// }
+

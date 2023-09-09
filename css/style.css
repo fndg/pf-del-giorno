@@ -1,4 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;700&display=swap");
+.buttonSubmitForm {
+  font-size: 1.3rem;
+  font-family: "Inter", sans-serif;
+  color: white;
+  background-color: #990000;
+  border: none;
+  width: auto;
+  /* height: 2rem;
+        
+    border-radius: 3.125rem;
+    border-style: none; */ }
+  .buttonSubmitForm:hover {
+    background-color: #860000;
+    color: white; }
+
 * {
   margin: 0;
   padding: 0;
