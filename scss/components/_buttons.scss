@@ -5,6 +5,10 @@
     background-color: $color-navbar;
     border: none;
     width: auto;
+    a{
+        text-decoration: none;
+        color: $color-font-nav;
+    }
     &:hover{
         background-color: #860000;
         color: $color-font-nav;

@@ -6,6 +6,9 @@
   background-color: #990000;
   border: none;
   width: auto; }
+  .buttonSubmitForm a {
+    text-decoration: none;
+    color: white; }
   .buttonSubmitForm:hover {
     background-color: #860000;
     color: white; }
@@ -233,3 +236,10 @@ footer {
   color: black; }
   .linkTextStyle:hover {
     text-decoration: underline; }
+
+.textError {
+  padding: 100px; }
+  .textError .pError {
+    text-align: center;
+    font-weight: bold;
+    margin: 0; }
