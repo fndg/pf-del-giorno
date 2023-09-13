@@ -33,8 +33,14 @@ footer{
     .redesIconos{
         grid-area: redesIconos;
         display: flex;
-        gap: 5vw;
-        // justify-self: center;
-        margin: 1.25rem;
+        flex-direction: row;
+        gap: 3vw;;
+        justify-content: center;
+        align-items: center;
+        a{
+            img{
+                width: 64px;
+            }
+        }
     }
 }

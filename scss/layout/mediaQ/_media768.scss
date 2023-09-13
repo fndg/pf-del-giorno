@@ -1,23 +1,23 @@
-@media (max-width: 500px){
+@media (max-width: 768px){
+    // INDEX
+    .linkButtonHeaderBack{
+        width: 14.75rem;
+        height: 3.6875rem;
+        position: relative;
+    }
+
+    // COLECCION
     .mainColeccion{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(8, 1fr); 
         grid-template-areas: 
-        "prenda1" 
-        "prenda2"
-        "prenda3" 
-        "prenda4"
-        "prenda5" 
-        "prenda6"
-        "prenda7" 
-        "prenda8"
-        "prenda9" 
-        "prenda10"
-        "prenda11" 
-        "prenda12"
-        "prenda13" 
-        "prenda14"
-        "prenda15" 
-        "prenda16";
+        "prenda1 prenda2"
+        "prenda3 prenda4"
+        "prenda5 prenda6"
+        "prenda7 prenda8"
+        "prenda9 prenda10"
+        "prenda11 prenda12"
+        "prenda13 prenda14"
+        "prenda15 prenda16";
     }
 }
