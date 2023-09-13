@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 .buttonSubmitForm {
   font-size: 1.3rem;
   font-family: "Inter", sans-serif;
@@ -13,11 +18,6 @@
   .buttonSubmitForm:hover {
     background-color: #860000;
     color: white; }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
 
 body {
   font-family: "Inter", sans-serif;
@@ -210,7 +210,7 @@ footer {
   width: 100%; }
 
 .mainSale {
-  margin: 1.25rem 1.5rem;
+  margin: 1.25rem 1.25rem;
   display: flex;
   flex-direction: column;
   gap: .625rem; }
@@ -258,7 +258,10 @@ footer {
   .mainColeccion {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(8, 1fr);
-    grid-template-areas: "prenda1 prenda2" "prenda3 prenda4" "prenda5 prenda6" "prenda7 prenda8" "prenda9 prenda10" "prenda11 prenda12" "prenda13 prenda14" "prenda15 prenda16"; } }
+    grid-template-areas: "prenda1 prenda2" "prenda3 prenda4" "prenda5 prenda6" "prenda7 prenda8" "prenda9 prenda10" "prenda11 prenda12" "prenda13 prenda14" "prenda15 prenda16"; }
+  .mainSale {
+    margin: 1vw 1vw;
+    gap: 1vw; } }
 
 @media (max-width: 500px) {
   .mainHome {
@@ -273,7 +276,16 @@ footer {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(16, 1fr);
     grid-template-areas: "prenda1"  "prenda2" "prenda3"  "prenda4" "prenda5"  "prenda6" "prenda7"  "prenda8" "prenda9"  "prenda10" "prenda11"  "prenda12" "prenda13"  "prenda14" "prenda15"  "prenda16"; }
+  .mainSale {
+    margin: .5vw .5vw;
+    gap: .25rem; }
   footer {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
-    grid-template-areas: "column1" "column2" "column3" "redesIconos"; } }
+    grid-template-areas: "column1" "column2" "column3" "redesIconos"; }
+    footer .redesIconos {
+      gap: 3vw;
+      justify-content: center;
+      align-items: center; }
+      footer .redesIconos a img {
+        width: 44px; } }

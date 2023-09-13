@@ -33,12 +33,28 @@
         "prenda15" 
         "prenda16";
     }
+
+    // SALE
+    .mainSale{
+        margin: .5vw .5vw;
+        gap: .25rem;
+    }
     
     // FOOTER
     footer{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, 1fr);
         grid-template-areas: "column1""column2""column3""redesIconos";
+        .redesIconos{
+            gap: 3vw;;
+            justify-content: center;
+            align-items: center;
+            a{
+                img{
+                    width: 44px;
+                }
+            }
+        }
     }
 }
 
