@@ -3,7 +3,9 @@
     .mainHome{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(auto auto auto);
-        grid-template-areas: "men""women""denim" 
+        grid-template-areas: "men""women""denim" ;
+        margin: .625rem;
+        gap: .625rem;
     }
     .linkButtonHeaderBack{
         width: 12.5rem;
@@ -56,5 +58,15 @@
             }
         }
     }
+
+    // FORMS
+    .formCampo{
+        width: 90%;
+    }
+
+    .loginFormCampo{
+        width: 80%;
+    }
+    
 }
 

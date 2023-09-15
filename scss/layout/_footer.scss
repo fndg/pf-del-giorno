@@ -18,6 +18,9 @@ footer{
                 a{
                     text-decoration: none;
                     color: $color-font-footer;
+                    &:hover{
+                        color:$color-font-footer-hover;
+                    }
                 }
             }
         }
@@ -40,6 +43,10 @@ footer{
         a{
             img{
                 width: 64px;
+                transition: all 300ms;
+                &:hover{
+                    transform: scale(1.2);
+                }
             }
         }
     }

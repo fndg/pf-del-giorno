@@ -1,6 +1,6 @@
 .mainColeccion{
     @include grid (repeat(4, 1fr), repeat(4, 1fr), "prenda1 prenda2 prenda3 prenda4""prenda5 prenda6 prenda7 prenda8""prenda9 prenda10 prenda11 prenda12""prenda13 prenda14 prenda15 prenda16", none, none);
-    column-gap: .125rem;
+    column-gap: .3125rem;
     row-gap: .9375rem;
     padding: 1.25rem;
     }
@@ -9,6 +9,11 @@
     grid-area: prenda1;
     color: $color-font-coleccion;
     text-decoration: none;
+    transition: all 300ms;
+        &:hover{
+            transform: scale(1.01);
+            box-shadow: 0 0 2px black;
+        }
     img{
         width: 100%;
     }

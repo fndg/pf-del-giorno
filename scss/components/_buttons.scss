@@ -5,7 +5,8 @@
     background-color: $color-navbar;
     border: none;
     width: auto;
-    margin: 70px;
+    margin: 10px;
+    transition: all 300ms;
     a{
         text-decoration: none;
         color: $color-font-nav;
@@ -13,5 +14,6 @@
     &:hover{
         background-color: #860000;
         color: $color-font-nav;
+        
     }
 }

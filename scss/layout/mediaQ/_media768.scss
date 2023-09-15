@@ -6,6 +6,11 @@
         position: relative;
     }
 
+    .mainHome{
+        margin: .9375rem;
+        gap: .9375rem;
+    }
+
     // COLECCION
     .mainColeccion{
         grid-template-columns: repeat(2, 1fr);
@@ -26,4 +31,14 @@
         margin: 1vw 1vw;
         gap: 1vw;
     }
+
+    // FORMS
+    .formCampo{
+        width: 70%;
+    }
+
+    .loginFormCampo{
+        width: 60%;
+    }
+    
 }

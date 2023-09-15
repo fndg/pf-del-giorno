@@ -11,6 +11,11 @@
     gap: .625rem;
     div{
         position: relative;
+        transition: all 300ms;
+        &:hover{
+            transform: scale(1.005);
+            box-shadow: 0 0 5px black;
+        }
         img{
             width: 100%;
         }

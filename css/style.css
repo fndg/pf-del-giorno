@@ -11,7 +11,8 @@
   background-color: #990000;
   border: none;
   width: auto;
-  margin: 70px; }
+  margin: 10px;
+  transition: all 300ms; }
   .buttonSubmitForm a {
     text-decoration: none;
     color: white; }
@@ -26,8 +27,7 @@ body {
 h1 {
   font-family: "Inter", sans-serif;
   font-weight: bold;
-  color: #212529;
-  width: 100%; }
+  color: #212529; }
 
 .logo {
   height: 3.125rem; }
@@ -62,6 +62,8 @@ footer {
       footer .column1 ul li a, footer .column2 ul li a, footer .column3 ul li a {
         text-decoration: none;
         color: #6F0707; }
+        footer .column1 ul li a:hover, footer .column2 ul li a:hover, footer .column3 ul li a:hover {
+          color: black; }
   footer .column2 {
     grid-area: column2; }
   footer .column3 {
@@ -74,7 +76,10 @@ footer {
     justify-content: center;
     align-items: center; }
     footer .redesIconos a img {
-      width: 64px; }
+      width: 64px;
+      transition: all 300ms; }
+      footer .redesIconos a img:hover {
+        transform: scale(1.2); }
 
 .bodyHome {
   background-color: black;
@@ -88,7 +93,7 @@ footer {
   width: 100%; }
 
 .linkButtonHeaderBack {
-  background-color: #99000099;
+  background-color: #99000090;
   border-style: solid;
   border-color: black;
   border-width: .0625rem;
@@ -98,7 +103,11 @@ footer {
   position: relative;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -150%); }
+  transform: translate(-50%, -150%);
+  transition: all 300ms; }
+  .linkButtonHeaderBack:hover {
+    background-color: #86000099;
+    color: white; }
 
 .backgroundHeaderTitle {
   font-size: 1rem;
@@ -141,7 +150,11 @@ footer {
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.8);
     padding: .625rem;
-    text-decoration: none; }
+    text-decoration: none;
+    transition: all 300ms; }
+    .mainHome .mainText:hover {
+      background-color: rgba(0, 0, 0, 0.9);
+      color: white; }
 
 .mainColeccion {
   display: grid;
@@ -150,14 +163,18 @@ footer {
   grid-template-areas: "prenda1 prenda2 prenda3 prenda4" "prenda5 prenda6 prenda7 prenda8" "prenda9 prenda10 prenda11 prenda12" "prenda13 prenda14 prenda15 prenda16";
   justify-content: none;
   align-content: none;
-  column-gap: .125rem;
+  column-gap: .3125rem;
   row-gap: .9375rem;
   padding: 1.25rem; }
 
 .prenda1, .prenda2, .prenda3, .prenda4, .prenda5, .prenda6, .prenda7, .prenda8, .prenda9, .prenda10, .prenda11, .prenda12, .prenda13, .prenda14, .prenda15, .prenda16 {
   grid-area: prenda1;
   color: black;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: all 300ms; }
+  .prenda1:hover, .prenda2:hover, .prenda3:hover, .prenda4:hover, .prenda5:hover, .prenda6:hover, .prenda7:hover, .prenda8:hover, .prenda9:hover, .prenda10:hover, .prenda11:hover, .prenda12:hover, .prenda13:hover, .prenda14:hover, .prenda15:hover, .prenda16:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 2px black; }
   .prenda1 img, .prenda2 img, .prenda3 img, .prenda4 img, .prenda5 img, .prenda6 img, .prenda7 img, .prenda8 img, .prenda9 img, .prenda10 img, .prenda11 img, .prenda12 img, .prenda13 img, .prenda14 img, .prenda15 img, .prenda16 img {
     width: 100%; }
 
@@ -215,7 +232,11 @@ footer {
   flex-direction: column;
   gap: .625rem; }
   .mainSale div {
-    position: relative; }
+    position: relative;
+    transition: all 300ms; }
+    .mainSale div:hover {
+      transform: scale(1.005);
+      box-shadow: 0 0 5px black; }
     .mainSale div img {
       width: 100%; }
 
@@ -235,11 +256,18 @@ footer {
   left: auto;
   right: 5%; }
 
+.contactFormCampo {
+  width: 50%; }
+
 .linkTextStyle {
+  font-size: .75rem;
   text-decoration: none;
   color: black; }
   .linkTextStyle:hover {
     text-decoration: underline; }
+
+.loginFormCampo {
+  width: 30%; }
 
 .textError {
   width: 100%;
@@ -250,24 +278,37 @@ footer {
     margin: 0;
     font-size: 1rem; }
 
+@media (max-width: 1024px) {
+  .loginFormCampo {
+    width: 40%; } }
+
 @media (max-width: 768px) {
   .linkButtonHeaderBack {
     width: 14.75rem;
     height: 3.6875rem;
     position: relative; }
+  .mainHome {
+    margin: .9375rem;
+    gap: .9375rem; }
   .mainColeccion {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(8, 1fr);
     grid-template-areas: "prenda1 prenda2" "prenda3 prenda4" "prenda5 prenda6" "prenda7 prenda8" "prenda9 prenda10" "prenda11 prenda12" "prenda13 prenda14" "prenda15 prenda16"; }
   .mainSale {
     margin: 1vw 1vw;
-    gap: 1vw; } }
+    gap: 1vw; }
+  .formCampo {
+    width: 70%; }
+  .loginFormCampo {
+    width: 60%; } }
 
 @media (max-width: 500px) {
   .mainHome {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(auto auto auto);
-    grid-template-areas: "men" "women" "denim"; }
+    grid-template-areas: "men" "women" "denim";
+    margin: .625rem;
+    gap: .625rem; }
   .linkButtonHeaderBack {
     width: 12.5rem;
     height: 3rem;
@@ -288,4 +329,13 @@ footer {
       justify-content: center;
       align-items: center; }
       footer .redesIconos a img {
-        width: 44px; } }
+        width: 44px; }
+  .formCampo {
+    width: 90%; }
+  .loginFormCampo {
+    width: 80%; } }
+
+@media (max-width: 320px) {
+  .mainHome {
+    margin: .3125rem;
+    gap: .3125rem; } }
