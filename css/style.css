@@ -280,7 +280,9 @@ footer {
 
 @media (max-width: 1024px) {
   .loginFormCampo {
-    width: 40%; } }
+    width: 40%; }
+  .contactFormCampo {
+    width: 60%; } }
 
 @media (max-width: 768px) {
   .linkButtonHeaderBack {
@@ -297,7 +299,7 @@ footer {
   .mainSale {
     margin: 1vw 1vw;
     gap: 1vw; }
-  .formCampo {
+  .contactFormCampo {
     width: 70%; }
   .loginFormCampo {
     width: 60%; } }
@@ -330,8 +332,8 @@ footer {
       align-items: center; }
       footer .redesIconos a img {
         width: 44px; }
-  .formCampo {
-    width: 90%; }
+  .contactFormCampo {
+    width: 80%; }
   .loginFormCampo {
     width: 80%; } }
 
